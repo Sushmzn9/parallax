@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+/* hero=====sec */
+.hero{
+    height: 90vh;
+    position: relative;
+    
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    /* object-fit: fill; */
+    object-fit: cover;
+    
+}
+.hero > div{
+position: absolute;
+top: 30vh;
+left: 1vw;
+background-color: rgba(255, 255, 255, 0.206);
+width:400px;
+padding: 1rem;
+border-radius: 10px;
+backdrop-filter: blur(10px);
+}
+
+/* nav sec */
+nav{
+    background-color: black;
+    color: white;
+  position: sticky;
+    top: 0;
+    z-index: 100;
+   
+}
+nav > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.3rem;
+}
+nav ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 1rem 0;
+}
+nav ul li {
+    transition: all 0.2s;
+
+}
+
+nav ul li:hover {
+    color: red;
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+
+
+/* section===== */
+[class^="s"]{
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 5rem;;
+    
+}
+.s1{
+    
+    background: url(./img/lachlan-rennie-C_-1xdqLHjo-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.s2{
+    background: url(./img/simon-wilkes-S297j2CsdlM-unsplash.jpg) center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.s3{
+    background: url(./img/zetong-li-cn-CJo_9DQ0-unsplash.jpg) center center no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.title{
+    background-color: rgba(0, 0, 0, 0.669);
+    color: white;
+    font-size: 2rem;
+    padding: 1.4rem 5rem;
+    border-radius: 10px;
+text-transform: uppercase;
+letter-spacing: 1rem;
+backdrop-filter: blur(5px);
+}
+
+/* footer//// */
+footer{
+    background-color: black;
+    color: white;
+    padding: 3rem;
+    text-align: center;
+}
+.down{
+    width: 18px;  
+    font-size:4rem;
+    position: absolute;
+left: 50%;
+    color: rgb(117, 26, 26);
+    animation: arrow 1s linear infinite;
+  
+}
+@keyframes arrow{
+    0%{
+        transform: rotate(90deg);
+       
+        bottom: 100px;
+      
+        color: rgba(241, 134, 80, 0.747);
+    }
+    100%{
+       transform:  rotate(90deg);
+        bottom: 10px;
+       color: black;
+        
+    }
+}
